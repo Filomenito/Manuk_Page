@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    background-image: url("Manuk.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    background: #a15;
+
+}
+
+p {
+    color: #a15;
+    font-family: 'Aboreto', cursive;
+    background: rgb(0, 0, 0);
+    font-size: 25px;
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+form {
+    text-align: center;
+
+}
+
+button {
+    font-size: 30px;
+    color:rgb(0, 255, 34); 
+    width: 200px;
+    height: 160px;
+    background-image: url("Manuk.png");
+    background-size: cover;
+    background-position: center center;
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+button:hover {
+    border: 5px solid rgb(255, 0, 115);
+    transition: 2s;
+
+}
+
+.footer__button-snow:hover {
+    border-color: rgb(255, 255, 255);
+
+}
+
+.footer__button-fire:hover {
+    border-color: rgb(255, 0, 0);
+
+}
+
+.footer__button-water:hover {
+    border-color: rgb(0, 162, 255);
+
+}
+
+h2 {
+    background-color: brown;
+    color: springgreen;
+    opacity: .7;
+}
+
+@keyframes colores {
+    0% {
+        color: rgb(158, 0, 71);
+    }
+    5% {
+        color: rgb(245, 156, 146);
+    }
+    20% {
+        color: rgb(78, 3, 148);
+    }
+    40% {
+        color: yellow;
+    }
+    65% {
+        color: rgb(0, 97, 87);
+    }
+    80% {
+        color: springgreen;
+    }
+    90% {
+        color: blue;
+    }
+    100% {
+        color: rgb(0, 255, 34);
+    }
+}
+
+.media {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+iframe {
+    width: 600px;
+    height: 300px;
+}
+
+.sound {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer {
+    justify-content: space-around;
+    display: flex;
+    margin: 200px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    p {
+        color: #a15;
+        font-family: 'Aboreto', cursive;
+        background: rgb(126, 45, 45);
+        font-size: 10px;
+        animation-name: colores;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    iframe {
+        width: 300px;
+        height: 150px;
+    }
+
+    #first-img {
+        float: left;
+    }    
+
+    #second-img {
+        opacity: 0;
+        position: absolute;
+    }
+}
